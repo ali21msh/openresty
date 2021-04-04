@@ -63,6 +63,7 @@ RUN rm -rf /usr/local/openresty/nginx/conf/nginx.conf
 RUN rm -rf /etc/nginx/conf.d
 
 RUN luarocks install luajson
+RUN luarocks install lunajson
 VOLUME /usr/local/openresty/nginx/conf/nginx.conf
 VOLUME /etc/nginx/conf.d
 VOLUME /usr/local/openresty/nginx/lua
